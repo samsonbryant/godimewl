@@ -1,0 +1,93 @@
+/* Header custom styles for NLC look */
+.main-navbar {
+  background: #fff !important;
+  border-bottom: 2px solid #e6e6e6;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  z-index: 1000;
+}
+
+.main-navbar .navbar-brand {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #006633 !important;
+  font-size: 2rem;
+}
+
+.nav-link-custom {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 500;
+  color: #222 !important;
+  font-size: 1.08rem;
+  padding: 0.7rem 1.1rem !important;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.nav-link-custom:hover, .nav-link-custom.active, .dropdown-item.active {
+  color: #fff !important;
+  background: linear-gradient(90deg, #006633 80%, #00994d 100%);
+  box-shadow: 0 2px 8px rgba(0,102,51,0.08);
+}
+
+.navbar-nav .nav-link-custom.active::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 3px;
+  background: #00994d;
+  border-radius: 2px;
+  margin-top: 2px;
+  animation: underlineGrow 0.3s;
+}
+
+@keyframes underlineGrow {
+  from { width: 0; }
+  to { width: 60%; }
+}
+
+.navbar-nav .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  border: 1px solid #e6e6e6;
+  margin-top: 0.5rem;
+  min-width: 220px;
+}
+
+.navbar-nav .dropdown-item {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+  color: #222 !important;
+  padding: 0.7rem 1.1rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.navbar-nav .dropdown-item:hover, .navbar-nav .dropdown-item.active {
+  background: #006633;
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .main-navbar .navbar-collapse {
+    background: #fff;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    margin-top: 0.5rem;
+  }
+  .main-navbar .navbar-nav {
+    gap: 0.5rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-navbar .navbar-brand span {
+    font-size: 1.2rem !important;
+  }
+  .main-navbar .navbar-brand img {
+    height: 36px !important;
+    width: 36px !important;
+  }
+} 
