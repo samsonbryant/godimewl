@@ -1,5 +1,6 @@
 import React from 'react'
-import about from "./assets/donar.png"
+import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { motion } from 'framer-motion'
 import Navbarr from './Navbarr'
 function Aboutus() {
   return (
@@ -18,7 +19,7 @@ function Aboutus() {
         </div>
         <div className="image">
           <span className="image__bg"></span>
-          <img src={about} alt="header image" />
+          <img src="" alt="header image" />
         </div>
       </header>
     </div>

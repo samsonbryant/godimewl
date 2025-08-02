@@ -14,7 +14,24 @@ import eventImg3 from '../assets/odonate.jpg';
 import aboutImg from '../assets/org1.jpg';
 import logo from '../assets/logo.jpg';
 import heroBg from '../assets/header-bg.jpg';
-import slideImg3 from '../assets/bdonate.jpg';
+import slideImg3 from '../assets/odonate.jpg';
+
+// Import new news images
+import bmmcLocalLeadership from '../assets/bmmc_local_leadership.jpg';
+import cbaDelegation from '../assets/CBA_delegation_with_mother_union_secretary_general_Macauley_GedeoJr.jpg';
+import secretaryGeneralLawyer from '../assets/SG_and_Bea_mountain_Lawyer.jpg';
+import afterCbaSigning from '../assets/after_cba_signing_process.jpg';
+import ministerLabour from '../assets/minister_of_labour_liberia.jpg';
+import pastPresentLeadership from '../assets/cba-exchange_process.jpg';
+import cbaSampleViews from '../assets/cba-exchange_process_2.jpg';
+import leadershipElectMeeting from '../assets/cba-exchange_process_4.jpg';
+import newlyElectedChairman from '../assets/local_leadership_training.jpg';
+import sinohdroWorkersLeadership from '../assets/sinohdro_workers_local_leadership.jpg';
+import sinohdroWorkersLeadership1 from '../assets/sinohdro_workers_local_leadership_1.jpg';
+import certificationOfLeaders from '../assets/certification_of_leaders.jpg';
+import certificationOfLeaders4 from '../assets/certification_of_leaders_4.jpg';
+import certificationOfLeaders5 from '../assets/certification_of_leaders_5.jpg';
+import certificationOfLeaders12 from '../assets/certification_of_leaders_12.jpg';
 
 const Media = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -78,10 +95,118 @@ const Media = () => {
     // News section images
     {
       id: 5,
-      title: 'Leadership Training (News)',
+      title: 'BMMC Local Leadership Training',
       category: 'news',
       type: 'image',
       date: '2025-05-01',
+      description: 'Local leadership training session for BMMC workers to enhance their organizational and leadership skills.',
+      tags: ['leadership', 'training', 'BMMC', 'news'],
+      src: bmmcLocalLeadership,
+      originalSrc: bmmcLocalLeadership,
+      featured: true
+    },
+    {
+      id: 6,
+      title: 'CBA Delegation with Mother Union Secretary General Macauley Gedeo, Jr.',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-02',
+      description: 'Collective Bargaining Agreement delegation meeting with the Mother Union Secretary General Macauley Gedeo, Jr.',
+      tags: ['CBA', 'delegation', 'secretary general', 'news'],
+      src: cbaDelegation,
+      originalSrc: cbaDelegation,
+      featured: true
+    },
+    {
+      id: 7,
+      title: 'Secretary General and Bea Mountain Lawyer Kunkunyor Teh and Macauley Gedeo, Jr.',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-03',
+      description: 'Meeting between the Secretary General and Bea Mountain lawyer Kunkunyor Teh with Macauley Gedeo, Jr.',
+      tags: ['secretary general', 'lawyer', 'meeting', 'news'],
+      src: secretaryGeneralLawyer,
+      originalSrc: secretaryGeneralLawyer,
+      featured: false
+    },
+    {
+      id: 8,
+      title: 'After CBA Signing Process',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-04',
+      description: 'Post-CBA signing process documentation and celebration of successful agreement completion.',
+      tags: ['CBA', 'signing', 'process', 'news'],
+      src: afterCbaSigning,
+      originalSrc: afterCbaSigning,
+      featured: false
+    },
+    {
+      id: 9,
+      title: 'Minister of Labour - Liberia, Cllr. Cooper Krah',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-05',
+      description: 'Official meeting with the Minister of Labour of Liberia, Cllr. Cooper Krah, to discuss workers\' rights and labor policies.',
+      tags: ['minister', 'labour', 'Liberia', 'news'],
+      src: ministerLabour,
+      originalSrc: ministerLabour,
+      featured: true
+    },
+    {
+      id: 10,
+      title: 'Past and Present Leadership Exchange',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-06',
+      description: 'Knowledge exchange session between past and present leadership to ensure continuity and institutional memory.',
+      tags: ['leadership', 'exchange', 'knowledge', 'news'],
+      src: pastPresentLeadership,
+      originalSrc: pastPresentLeadership,
+      featured: false
+    },
+    {
+      id: 11,
+      title: 'CBA Sample Views with workers',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-07',
+      description: 'Presentation and discussion of CBA sample views with workers to ensure transparency and understanding.',
+      tags: ['CBA', 'workers', 'presentation', 'news'],
+      src: cbaSampleViews,
+      originalSrc: cbaSampleViews,
+      featured: false
+    },
+    {
+      id: 12,
+      title: 'Leadership Elect meeting with Management',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-08',
+      description: 'Meeting between newly elected leadership and management to establish working relationships and discuss future collaboration.',
+      tags: ['leadership', 'management', 'meeting', 'news'],
+      src: leadershipElectMeeting,
+      originalSrc: leadershipElectMeeting,
+      featured: false
+    },
+    {
+      id: 13,
+      title: 'Newly elected chairman BMMC/CMC, Chairman Paul Wah',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-09',
+      description: 'Introduction and official recognition of the newly elected chairman for BMMC/CMC, Chairman Paul Wah.',
+      tags: ['chairman', 'BMMC', 'CMC', 'election', 'news'],
+      src: newlyElectedChairman,
+      originalSrc: newlyElectedChairman,
+      featured: false
+    },
+    {
+      id: 14,
+      title: 'Leadership Training (News)',
+      category: 'news',
+      type: 'image',
+      date: '2025-05-10',
       description: 'Workers Leadership with the Secretary General for Gold and Diamond Mines and Energy workers Union of Liberia; Bargaining Agent for Bea Mountain Mining Corporation workers Macauley Gedeo, Jr.',
       tags: ['leadership', 'training', 'news'],
       src: newsImg1,
@@ -89,11 +214,11 @@ const Media = () => {
       featured: false
     },
     {
-      id: 6,
+      id: 15,
       title: 'CBA Siting Process (News)',
       category: 'news',
       type: 'image',
-      date: '2025-05-02',
+      date: '2025-05-11',
       description: 'Bea Mountain mining corporation lawyer Cllr. Kunkun Teh Gold and Diamond miners and Energy workers Union of Liberia Secretary General Macauley Gedeo, Jr.',
       tags: ['CBA', 'legal', 'news'],
       src: newsImg2,
@@ -101,20 +226,92 @@ const Media = () => {
       featured: false
     },
     {
-      id: 7,
+      id: 16,
       title: 'CBA Signing Process & Exchange (News)',
       category: 'news',
       type: 'image',
-      date: '2025-05-03',
+      date: '2025-05-12',
       description: 'Exchange of CBA by the Secretary General Macauley Gedeo, Jr., GODIMEWUL with the Bea Mountain Mining Corporation Manager Emre Kuyu and Ministry of Labour Cooper Kraah.',
       tags: ['exchange', 'news'],
       src: newsImg3,
       originalSrc: newsImg3,
       featured: false
     },
+    {
+      id: 25,
+      title: 'Sinohydro Workers Local Leadership Training',
+      category: 'news',
+      type: 'image',
+      date: '2025-06-01',
+      description: 'Local leadership training session for Sinohydro workers to enhance their organizational and leadership skills.',
+      tags: ['leadership', 'training', 'Sinohydro', 'workers', 'news'],
+      src: sinohdroWorkersLeadership,
+      originalSrc: sinohdroWorkersLeadership,
+      featured: true
+    },
+    {
+      id: 26,
+      title: 'Sinohydro Workers Local Leadership Training (Additional View)',
+      category: 'news',
+      type: 'image',
+      date: '2025-06-01',
+      description: 'Additional view of the local leadership training session for Sinohydro workers.',
+      tags: ['leadership', 'training', 'Sinohydro', 'workers', 'news'],
+      src: sinohdroWorkersLeadership1,
+      originalSrc: sinohdroWorkersLeadership1,
+      featured: false
+    },
+    {
+      id: 27,
+      title: 'Certification of Leaders',
+      category: 'news',
+      type: 'image',
+      date: '2025-06-02',
+      description: 'Certification ceremony for leaders of the organization to recognize their achievements and qualifications.',
+      tags: ['certification', 'leaders', 'ceremony', 'news'],
+      src: certificationOfLeaders,
+      originalSrc: certificationOfLeaders,
+      featured: true
+    },
+    {
+      id: 28,
+      title: 'Certification of Leaders (View 2)',
+      category: 'news',
+      type: 'image',
+      date: '2025-06-02',
+      description: 'Additional view of the certification ceremony for organizational leaders.',
+      tags: ['certification', 'leaders', 'ceremony', 'news'],
+      src: certificationOfLeaders4,
+      originalSrc: certificationOfLeaders4,
+      featured: false
+    },
+    {
+      id: 29,
+      title: 'Certification of Leaders (View 3)',
+      category: 'news',
+      type: 'image',
+      date: '2025-06-02',
+      description: 'Another perspective of the certification ceremony for organizational leaders.',
+      tags: ['certification', 'leaders', 'ceremony', 'news'],
+      src: certificationOfLeaders5,
+      originalSrc: certificationOfLeaders5,
+      featured: false
+    },
+    {
+      id: 30,
+      title: 'Certification of Leaders (View 4)',
+      category: 'news',
+      type: 'image',
+      date: '2025-06-02',
+      description: 'Final view of the certification ceremony for organizational leaders.',
+      tags: ['certification', 'leaders', 'ceremony', 'news'],
+      src: certificationOfLeaders12,
+      originalSrc: certificationOfLeaders12,
+      featured: false
+    },
     // Events section images
     {
-      id: 8,
+      id: 31,
       title: 'Union Education Training (Event)',
       category: 'events',
       type: 'image',
@@ -126,7 +323,7 @@ const Media = () => {
       featured: false
     },
     {
-      id: 9,
+      id: 32,
       title: 'Advocacy & Policy Workshop',
       category: 'events',
       type: 'image',
@@ -138,7 +335,7 @@ const Media = () => {
       featured: false
     },
     {
-      id: 10,
+      id: 33,
       title: 'Exchange Program Launch',
       category: 'events',
       type: 'image',
@@ -151,7 +348,7 @@ const Media = () => {
     },
     // Additional images from Home page assets
     {
-      id: 11,
+      id: 34,
       title: 'About GODIMEWUL',
       category: 'about',
       type: 'image',
@@ -163,7 +360,7 @@ const Media = () => {
       featured: false
     },
     {
-      id: 12,
+      id: 35,
       title: 'GODIMEWUL Logo',
       category: 'branding',
       type: 'image',
@@ -175,7 +372,7 @@ const Media = () => {
       featured: true
     },
     {
-      id: 13,
+      id: 36,
       title: 'Hero Background',
       category: 'branding',
       type: 'image',
@@ -187,7 +384,7 @@ const Media = () => {
       featured: false
     },
     {
-      id: 14,
+      id: 37,
       title: 'Blood Donation',
       category: 'events',
       type: 'image',
@@ -200,7 +397,7 @@ const Media = () => {
     },
     // Sample video content (unchanged)
     {
-      id: 15,
+      id: 38,
       title: 'Sample Video Content',
       category: 'media',
       type: 'video',
@@ -215,8 +412,9 @@ const Media = () => {
 
   const categories = [
     { id: 'all', name: 'All Media', count: galleryData.length },
+    { id: 'carousel', name: 'Carousel Images', count: galleryData.filter(item => item.category === 'carousel').length },
     { id: 'news', name: 'News & Updates', count: galleryData.filter(item => item.category === 'news').length },
-    { id: 'programs', name: 'Programs & Events', count: galleryData.filter(item => item.category === 'programs').length },
+    { id: 'events', name: 'Events & Programs', count: galleryData.filter(item => item.category === 'events').length },
     { id: 'about', name: 'About Us', count: galleryData.filter(item => item.category === 'about').length },
     { id: 'branding', name: 'Branding', count: galleryData.filter(item => item.category === 'branding').length },
     { id: 'media', name: 'Videos', count: galleryData.filter(item => item.category === 'media').length }

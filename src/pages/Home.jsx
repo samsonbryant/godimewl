@@ -12,8 +12,25 @@ import eventImg3 from '../assets/odonate.jpg';
 import logo from '../assets/logo.jpg';
 import slideImg1 from '../assets/org1.jpg';
 import slideImg2 from '../assets/cb1.jpg';
-import slideImg3 from '../assets/bdonate.jpg';
+import slideImg3 from '../assets/odonate.jpg';
 import slideImg4 from '../assets/bloodbg.jpg';
+
+// Import new news images
+import bmmcLocalLeadership from '../assets/bmmc_local_leadership.jpg';
+import cbaDelegation from '../assets/CBA_delegation_with_mother_union_secretary_general_Macauley_GedeoJr.jpg';
+import secretaryGeneralLawyer from '../assets/SG_and_Bea_mountain_Lawyer.jpg';
+import afterCbaSigning from '../assets/after_cba_signing_process.jpg';
+import ministerLabour from '../assets/minister_of_labour_liberia.jpg';
+import pastPresentLeadership from '../assets/cba-exchange_process.jpg';
+import cbaSampleViews from '../assets/cba-exchange_process_2.jpg';
+import leadershipElectMeeting from '../assets/cba-exchange_process_4.jpg';
+import newlyElectedChairman from '../assets/local_leadership_training.jpg';
+import sinohdroWorkersLeadership from '../assets/sinohdro_workers_local_leadership.jpg';
+import sinohdroWorkersLeadership1 from '../assets/sinohdro_workers_local_leadership_1.jpg';
+import certificationOfLeaders from '../assets/certification_of_leaders.jpg';
+import certificationOfLeaders4 from '../assets/certification_of_leaders_4.jpg';
+import certificationOfLeaders5 from '../assets/certification_of_leaders_5.jpg';
+import certificationOfLeaders12 from '../assets/certification_of_leaders_12.jpg';
 import './Home.css';
 
 const slideData = [
@@ -53,6 +70,60 @@ const slideData = [
 
 const news = [
   {
+    title: 'BMMC Local Leadership Training',
+    date: 'May 2025',
+    excerpt: 'Local leadership training session for BMMC workers to enhance their organizational and leadership skills.',
+    images: [bmmcLocalLeadership],
+  },
+  {
+    title: 'CBA Delegation with Mother Union Secretary General Macauley Gedeo, Jr.',
+    date: 'May 2025',
+    excerpt: 'Collective Bargaining Agreement delegation meeting with the Mother Union Secretary General Macauley Gedeo, Jr.',
+    images: [cbaDelegation],
+  },
+  {
+    title: 'Secretary General and Bea Mountain Lawyer Kunkunyor Teh and Macauley Gedeo, Jr.',
+    date: 'May 2025',
+    excerpt: 'Meeting between the Secretary General and Bea Mountain lawyer Kunkunyor Teh with Macauley Gedeo, Jr.',
+    images: [secretaryGeneralLawyer],
+  },
+  {
+    title: 'After CBA Signing Process',
+    date: 'May 2025',
+    excerpt: 'Post-CBA signing process documentation and celebration of successful agreement completion.',
+    images: [afterCbaSigning],
+  },
+  {
+    title: 'Minister of Labour - Liberia, Cllr. Cooper Krah',
+    date: 'May 2025',
+    excerpt: 'Official meeting with the Minister of Labour of Liberia, Cllr. Cooper Krah, to discuss workers\' rights and labor policies.',
+    images: [ministerLabour],
+  },
+  {
+    title: 'Past and Present Leadership Exchange',
+    date: 'May 2025',
+    excerpt: 'Knowledge exchange session between past and present leadership to ensure continuity and institutional memory.',
+    images: [pastPresentLeadership],
+  },
+  {
+    title: 'CBA Sample Views with workers',
+    date: 'May 2025',
+    excerpt: 'Presentation and discussion of CBA sample views with workers to ensure transparency and understanding.',
+    images: [cbaSampleViews],
+  },
+  {
+    title: 'Leadership Elect meeting with Management',
+    date: 'May 2025',
+    excerpt: 'Meeting between newly elected leadership and management to establish working relationships and discuss future collaboration.',
+    images: [leadershipElectMeeting],
+  },
+  {
+    title: 'Newly elected chairman BMMC/CMC, Chairman Paul Wah',
+    date: 'May 2025',
+    excerpt: 'Introduction and official recognition of the newly elected chairman for BMMC/CMC, Chairman Paul Wah.',
+    images: [newlyElectedChairman],
+  },
+  {
     title: 'Leadership Training',
     date: 'May 2025',
     excerpt: 'Workers Leadership with the Secretary General for Gold and Diamond Mines and Energy workers Union of Liberia; Bargaining Agent for Bea Mountain Mining Corporation workers Macauley Gedeo, Jr.',
@@ -69,6 +140,18 @@ const news = [
     date: 'May 2025',
     excerpt: 'Exchange of CBA by the Secretary General Macauley Gedeo, Jr., GODIMEWUL with the Bea Mountain Mining Corporation Manager Emre Kuyu and Ministry of Labour Cooper Kraah.',
     images: [newsImg3],
+  },
+  {
+    title: 'Sinohydro Workers Local Leadership Training',
+    date: 'June 2025',
+    excerpt: 'Local leadership training session for Sinohydro workers to enhance their organizational and leadership skills.',
+    images: [sinohdroWorkersLeadership, sinohdroWorkersLeadership1],
+  },
+  {
+    title: 'Certification of Leaders',
+    date: 'June 2025',
+    excerpt: 'Certification ceremony for leaders of the organization.',
+    images: [certificationOfLeaders, certificationOfLeaders4, certificationOfLeaders5, certificationOfLeaders12],
   },
 ];
 

@@ -1,5 +1,7 @@
 #root {
-  max-width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 
@@ -65,12 +67,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Ensure proper container alignment */
 .container {
   max-width: 1200px;
-  margin: auto;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
 }
 
 nav {
@@ -292,19 +294,52 @@ font-size:30px;
 #basic-nav-dropdown{
   
 }
-.navbar{
-  display:flex;
-  gap:14%;
-  background-color:transparent !important;
+/* Fix navbar alignment */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px;
+  background-color: transparent !important;
 }
-.navbar > a{
-  text-decoration:none;
-  color:white;
-  font-size:15px;
+
+/* Ensure proper grid alignment */
+.gallery-grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
 }
-.navbar > a:hover{
-  color:blue;
-  font-weight:800;
+
+.gallery-grid.grid {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  justify-items: stretch;
+}
+
+/* Fix responsive alignment */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  .gallery-grid.grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .navbar {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 5px;
+  }
+  
+  .navbar {
+    padding: 0 5px;
+  }
 }
 
 

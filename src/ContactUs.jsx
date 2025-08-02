@@ -1,5 +1,6 @@
 import React from 'react'
-import contact from "./assets/con3.webp"
+import { Container, Row, Col, Card, Button } from 'react-bootstrap'
+import { motion } from 'framer-motion'
 import Navbarr from './Navbarr'
 function ContactUs() {
   return (
@@ -26,7 +27,7 @@ function ContactUs() {
         </div>
         <div className="image">
           <span className="image__bg"></span>
-          <img src={contact} alt="header image" />
+          <img src="" alt="header image" />
         </div>
       </header>
     </div>

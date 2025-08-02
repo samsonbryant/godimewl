@@ -2,8 +2,8 @@ import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import org1 from "./assets/org1.jpg"
-import org2 from "./assets/org2.jpeg"
-import org3 from "./assets/org3.jpeg"
+import org2 from "./assets/org2.jpg"
+import org3 from "./assets/org3.jpg"
 import Navbarr from './Navbarr'
 
 function Organs() {

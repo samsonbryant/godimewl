@@ -67,7 +67,7 @@ const Footer = () => {
     <footer className="footer-modern">
       {/* Main Footer Content */}
       <div className="footer-main">
-        <Container>
+    <Container>
           <motion.div
             variants={footerVariants}
             initial="hidden"
@@ -102,7 +102,7 @@ const Footer = () => {
                     ))}
                   </div>
                 </motion.div>
-              </Col>
+        </Col>
 
               {/* Quick Links */}
               <Col lg={2} md={6}>
@@ -116,7 +116,7 @@ const Footer = () => {
                         </a>
                       </motion.li>
                     ))}
-                  </ul>
+          </ul>
                 </motion.div>
               </Col>
 
@@ -135,7 +135,7 @@ const Footer = () => {
                     ))}
                   </div>
                 </motion.div>
-              </Col>
+        </Col>
 
               {/* Newsletter */}
               <Col lg={3} md={6}>
@@ -173,8 +173,8 @@ const Footer = () => {
                     </motion.div>
                   )}
                 </motion.div>
-              </Col>
-            </Row>
+        </Col>
+      </Row>
           </motion.div>
         </Container>
       </div>
@@ -204,9 +204,9 @@ const Footer = () => {
                   Established: October 24, 2018
                 </span>
               </motion.div>
-            </Col>
-          </Row>
-        </Container>
+        </Col>
+      </Row>
+    </Container>
       </div>
 
       {/* Scroll to Top Button */}
@@ -221,8 +221,8 @@ const Footer = () => {
       >
         <FaArrowUp />
       </motion.button>
-    </footer>
-  );
+  </footer>
+);
 };
 
 export default Footer; 

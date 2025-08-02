@@ -1,5 +1,4 @@
 import React from 'react'
-import bdonate from "./assets/bdonate.jpg"
 import odonate from "./assets/odonate.jpg"
 import { Card, CardLink } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
@@ -13,7 +12,7 @@ function DonarSelect() {
 <h4>blood &#8811;</h4>
           <Card style={{ width: '18rem', height: "18rem", alignItems: "center" }}>
           <Link to="/blood-donate">
-            <Card.Img variant="top" src={bdonate} />
+            <Card.Img variant="top" src={odonate} />
           </Link>
           <Card.Body>
           </Card.Body>

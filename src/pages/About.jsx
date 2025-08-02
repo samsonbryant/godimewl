@@ -11,6 +11,9 @@ import adolphusImg from '../assets/adolphus.jpg';
 import danielCooperImg from '../assets/daniel _ooper.jpg';
 import jereleneKarpahImg from '../assets/Jerelene_karpah.jpg';
 import macauleyGedeoImg from '../assets/macauley_gedeo.jpg';
+import winstonWrehImg from '../assets/Winston_Wreh.jpg';
+import audreyTulayImg from '../assets/Tulay.jpg';
+import wesleySayleeImg from '../assets/mr_saylee.jpg';
 import placeholderImg from '../assets/WhatsApp Image 2025-07-11 at 04.46.09_3914af17.jpg';
 
 const aboutDetails = [
@@ -38,7 +41,7 @@ const leadershipData = [
     id: 1,
     name: 'Winston W. Wreh, Sr.',
     position: 'President General',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: winstonWrehImg, // Found matching image
     bio: 'Winston W. Wreh, Sr. serves as the President General of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'winston.wreh@godimewul.org',
     phone: '+231 886880068/776147982',
@@ -106,7 +109,7 @@ const leadershipData = [
     id: 5,
     name: 'Audrey Tulay',
     position: 'Administrative  Assistant',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: audreyTulayImg, // Found matching image
     bio: 'Audrey Tulay provides administrative guidance and support for the organization. She has been instrumental in coordinating internal operations and ensuring smooth functioning of the organization.',
     email: 'audrey.tulay@godimewul.org',
     phone: '+231 881554501/0770410976',
@@ -123,7 +126,7 @@ const leadershipData = [
     id: 6,
     name: 'Wesley N. Saylee',
     position: 'Grievance-Chair',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: wesleySayleeImg, // Found matching image
     bio: 'Wesley N. Saylee serves as the Grievance-Chair of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'wesley.saylee@godimewul.org',
     phone: '+231 886968388/0777968388',
@@ -202,7 +205,7 @@ const leadershipData = [
       whatsapp: '+231776147983'
     },
     featured: false,
-    department: 'Cleaner'
+    department: 'Organizer'
   },
   {
     id: 11,
@@ -236,7 +239,7 @@ const leadershipData = [
       whatsapp: '+231886910045'
     },
     featured: false,
-      department: 'Organizer'
+    department: 'Organizer'
   }
 ];
 
@@ -249,9 +252,12 @@ const About = () => {
     { id: 'all', name: 'All Departments', count: leadershipData.length },
     { id: 'Executive Leadership', name: 'Executive Leadership', count: leadershipData.filter(item => item.department === 'Executive Leadership').length },
     { id: 'Programs & Education', name: 'Programs & Education', count: leadershipData.filter(item => item.department === 'Programs & Education').length },
-    { id: 'Legal Affairs', name: 'Legal Affairs', count: leadershipData.filter(item => item.department === 'Legal Affairs').length },
-    { id: 'Communications', name: 'Communications', count: leadershipData.filter(item => item.department === 'Communications').length },
-    { id: 'Membership Services', name: 'Membership Services', count: leadershipData.filter(item => item.department === 'Membership Services').length }
+    { id: 'Administrative', name: 'Administrative', count: leadershipData.filter(item => item.department === 'Administrative').length },
+    { id: 'Grievance', name: 'Grievance', count: leadershipData.filter(item => item.department === 'Grievance').length },
+    { id: 'Maintenance', name: 'Maintenance', count: leadershipData.filter(item => item.department === 'Maintenance').length },
+    { id: 'Organizer', name: 'Organizer', count: leadershipData.filter(item => item.department === 'Organizer').length },
+    { id: 'Driver', name: 'Driver', count: leadershipData.filter(item => item.department === 'Driver').length },
+    { id: 'Cleaner', name: 'Cleaner', count: leadershipData.filter(item => item.department === 'Cleaner').length }
   ];
 
   const filteredLeadership = leadershipData.filter(member => 
