@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card, Carousel, Badge } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 import heroBg from '../assets/header-bg.jpg';
 import aboutImg from '../assets/org1.jpg';
@@ -206,7 +206,7 @@ const Home = () => (
                   background: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6))'
                 }}
               />
-              <div className="position-absolute top-50 start-50 translate-middle text-center text-white" style={{ width: '90%', maxWidth: '800px', zIndex: 2 }}>
+              <div className="position-absolute top-50 start-50 translate-middle text-center text-white px-3" style={{ width: '95%', maxWidth: '800px', zIndex: 2 }}>
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -218,7 +218,7 @@ const Home = () => (
                   <h3 className="h4 mb-3 text-warning" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                     {slide.subtitle}
                   </h3>
-                  <p className="lead mb-4" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
+                  <p className="lead mb-4 d-none d-md-block" style={{ textShadow: '1px 1px 2px rgba(0,0,0,0.8)' }}>
                     {slide.description}
                   </p>
                   <Button 
@@ -242,12 +242,12 @@ const Home = () => (
       </Carousel>
     </section>
 
-    <section className="nlc-hero-section position-relative" style={{ background: 'linear-gradient(135deg, #fff 0%, #C9A13B 100%)' }}>
+    <section className="nlc-hero-section position-relative py-5" style={{ background: 'linear-gradient(135deg, #fff 0%, #C9A13B 100%)' }}>
       <div className="nlc-hero-bg" style={{ backgroundImage: `url(${heroBg})`, opacity: 0.15 }} />
       <div className="nlc-hero-overlay" />
       <Container className="h-100 position-relative z-2">
         <Row className="align-items-center justify-content-center h-100">
-          <Col md={12} className="text-center mb-4">
+          <Col xs={12} md={12} className="text-center mb-4">
             <motion.img
               src={logo}
               alt="GODIMEWUL Logo"
@@ -258,7 +258,7 @@ const Home = () => (
               transition={{ duration: 0.8 }}
             />
           </Col>
-          <Col md={10} lg={8} className="text-center">
+          <Col xs={12} md={10} lg={8} className="text-center">
             <motion.h1
               className="display-3 fw-bold mb-3 nlc-hero-title"
               style={{ color: '#222', textShadow: '0 2px 8px #fff' }}
@@ -333,39 +333,59 @@ const Home = () => (
         </Row>
       </Container>
     </section>
-    <section className="py-5 bg-light nlc-news-section">
+    {/* Latest News & Announcements */}
+    <section className="news-section py-5">
       <Container>
-        <motion.h2
-          className="mb-4 text-success fw-bold text-center"
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-5"
         >
-          Latest News & Announcements
-        </motion.h2>
-        <Row>
-          {news.map((item, idx) => (
-            <Col md={4} className="mb-4" key={idx}>
+          <h2 className="display-5 fw-bold mb-3" style={{ color: '#C9A13B' }}>
+            Latest News & Announcements
+          </h2>
+          <p className="lead text-muted">
+            Stay updated with the latest developments and announcements from GODIMEWUL
+          </p>
+        </motion.div>
+
+        <Row className="g-4">
+          {news.slice(0, 6).map((item, index) => (
+            <Col xs={12} sm={6} lg={4} key={index}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: idx * 0.15 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
               >
-                <Card className="h-100 shadow-sm border-0">
-                  {item.images && item.images.length > 0 && (
-                    <Carousel interval={4000} indicators={item.images.length > 1} controls={item.images.length > 1} className="mb-2 nlc-news-carousel">
-                      {item.images.map((img, i) => (
-                        <Carousel.Item key={i}>
-                          <img src={img} alt={item.title + ' image ' + (i+1)} className="d-block w-100 rounded-top" style={{height: 180, objectFit: 'cover'}} />
-                        </Carousel.Item>
-                      ))}
-                    </Carousel>
-                  )}
-                  <Card.Body>
-                    <Card.Title className="fw-bold text-success">{item.title}</Card.Title>
-                    <Card.Subtitle className="mb-2 text-muted">{item.date}</Card.Subtitle>
-                    <Card.Text>{item.excerpt}</Card.Text>
-                    <Button variant="success" size="sm">Read More</Button>
+                <Card className="h-100 news-card shadow-sm border-0" style={{ borderRadius: '15px', overflow: 'hidden' }}>
+                  <div className="position-relative">
+                    <Card.Img 
+                      variant="top" 
+                      src={item.images[0]} 
+                      style={{ height: 200, objectFit: 'cover' }}
+                    />
+                    <div className="position-absolute top-0 end-0 m-2">
+                      <Badge bg="warning" text="dark" className="px-2 py-1">
+                        {item.date}
+                      </Badge>
+                    </div>
+                  </div>
+                  <Card.Body className="d-flex flex-column p-4">
+                    <Card.Title className="fw-bold mb-2" style={{ color: '#C9A13B', fontSize: '1.1rem' }}>
+                      {item.title}
+                    </Card.Title>
+                    <Card.Text className="text-muted flex-grow-1" style={{ fontSize: '0.9rem' }}>
+                      {item.excerpt}
+                    </Card.Text>
+                    <Button 
+                      variant="outline-warning" 
+                      size="sm" 
+                      className="mt-auto align-self-start"
+                      style={{ borderColor: '#C9A13B', color: '#C9A13B' }}
+                    >
+                      Read More
+                    </Button>
                   </Card.Body>
                 </Card>
               </motion.div>
