@@ -14,6 +14,7 @@ import macauleyGedeoImg from '../assets/macauley_gedeo.jpg';
 import winstonWrehImg from '../assets/Winston_Wreh.jpg';
 import audreyTulayImg from '../assets/Tulay.jpg';
 import wesleySayleeImg from '../assets/mr_saylee.jpg';
+import samuelSambolaImg from '../assets/Samuel Sambula.jpg';
 import placeholderImg from '../assets/WhatsApp Image 2025-07-11 at 04.46.09_3914af17.jpg';
 
 const aboutDetails = [
@@ -75,7 +76,7 @@ const leadershipData = [
     id: 3,
     name: 'Samuel S. Sambola',
     position: 'Deputy Secretary General',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: samuelSambolaImg, // Found matching image
     bio: 'Samuel S. Sambola serves as the Deputy Secretary General of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'samuel.sambola@godimewul.org',
     phone: '+231 886210334/07773533445',
@@ -143,7 +144,7 @@ const leadershipData = [
     id: 7,
     name: 'Romeo Wreh',
     position: 'Office Assistant',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: logo, // No specific image found, use logo
     bio: 'Romeo Wreh coordinates office activities and ensures effective representation of workers across all sectors. He maintains strong relationships with union members and local chapters.',
     email: 'romeo.wreh@godimewul.org',
     phone: '+231 880784877/0777800181',
@@ -194,7 +195,7 @@ const leadershipData = [
     id: 10,
     name: 'Julius B. Nugba',
     position: 'Organizer(Bomi)',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: logo, // No specific image found, use logo
     bio: 'Julius B. Nugba coordinates organizing activities and ensures effective representation of workers across all sectors. He maintains strong relationships with union members and local chapters.',
     email: 'julius.nugba@godimewul.org',
     phone: '+231 776147983/0776147983',
@@ -211,7 +212,7 @@ const leadershipData = [
     id: 11,
     name: 'Garrison N. Nebo',
     position: 'Driver',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: logo, // No specific image found, use logo
     bio: 'Garrison N. Nebo coordinates driving activities and ensures effective representation of workers across all sectors. He maintains strong relationships with union members and local chapters.',
     email: 'garrison.nebo@godimewul.org',
     phone: '+231 886699188/0776699188',
@@ -228,7 +229,7 @@ const leadershipData = [
     id: 12,
     name: 'Stephen Diggs',
     position: 'Organizer(Cape Mount)',
-    image: placeholderImg, // No specific image found, use placeholder
+    image: logo, // No specific image found, use logo
     bio: 'Stephen Diggs coordinates organizing activities and ensures effective representation of workers across all sectors. He maintains strong relationships with union members and local chapters.',
     email: 'stephen.diggs@godimewul.org',
     phone: '+231886910045/0777259443',

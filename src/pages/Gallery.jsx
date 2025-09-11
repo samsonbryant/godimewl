@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Modal, Badge } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaSearch, FaFilter, FaTimes, FaPlay, FaImage, FaVideo, FaDownload, FaShare, FaCalendar, FaTag } from 'react-icons/fa';
@@ -13,6 +13,19 @@ import eventImg2 from '../assets/bloodbg.jpg';
 import eventImg3 from '../assets/odonate.jpg';
 import aboutImg from '../assets/org1.jpg';
 import logo from '../assets/logo.jpg';
+
+// Import Programs and Events images
+import unionEducationTraining1 from '../assets/Union-education-training-1.jpg';
+import unionEducationTraining2 from '../assets/Union-Education-Training-2.jpg';
+import advocacyWorkshop1 from '../assets/advocacy-and-policy-workshop-1.jpg';
+import advocacyWorkshop2 from '../assets/advocacy-and-policy-workshop-2.jpg';
+import advocacyWorkshop3 from '../assets/advocacy-and-policy-workshop-3.jpg';
+import advocacyWorkshop4 from '../assets/advocacy-and-policy-workshop-4.jpg';
+
+// Import leadership images
+import localLeadershipTraining from '../assets/local_leadership_training.jpg';
+import bmmcLocalLeadership from '../assets/bmmc_local_leadership.jpg';
+import cbaDelegation from '../assets/CBA_delegation_with_mother_union_secretary_general_Macauley_GedeoJr.jpg';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -32,8 +45,8 @@ const Gallery = () => {
       date: '2025-01-15',
       description: 'Workers Leadership with the Secretary General for Gold and Diamond Mines and Energy workers Union of Liberia; Bargaining Agent for Bea Mountain Mining Corporation workers Macauley Gedeo, Jr.',
       tags: ['leadership', 'training', 'workers'],
-      src: newsImg1,
-      originalSrc: newsImg1,
+      src: localLeadershipTraining,
+      originalSrc: localLeadershipTraining,
       featured: true
     },
     {
@@ -68,24 +81,72 @@ const Gallery = () => {
       date: '2024-12-20',
       description: 'Capacity development and union education for all GODIMEWUL members.',
       tags: ['education', 'training', 'capacity'],
-      src: eventImg,
-      originalSrc: eventImg,
+      src: unionEducationTraining1,
+      originalSrc: unionEducationTraining1,
       featured: true
     },
     {
       id: 5,
+      title: 'Union Education Training - Additional View',
+      category: 'programs',
+      type: 'image',
+      date: '2024-12-20',
+      description: 'Additional view of the union education training session.',
+      tags: ['education', 'training', 'capacity'],
+      src: unionEducationTraining2,
+      originalSrc: unionEducationTraining2,
+      featured: false
+    },
+    {
+      id: 6,
       title: 'Advocacy Workshop',
       category: 'programs',
       type: 'image',
       date: '2024-12-15',
       description: 'Workshop on lobbying for policies that defend workers\' rights and interests.',
       tags: ['advocacy', 'workshop', 'policy'],
-      src: eventImg2,
-      originalSrc: eventImg2,
+      src: advocacyWorkshop1,
+      originalSrc: advocacyWorkshop1,
+      featured: true
+    },
+    {
+      id: 7,
+      title: 'Advocacy Workshop - View 2',
+      category: 'programs',
+      type: 'image',
+      date: '2024-12-15',
+      description: 'Additional view of the advocacy workshop session.',
+      tags: ['advocacy', 'workshop', 'policy'],
+      src: advocacyWorkshop2,
+      originalSrc: advocacyWorkshop2,
       featured: false
     },
     {
-      id: 6,
+      id: 8,
+      title: 'Advocacy Workshop - View 3',
+      category: 'programs',
+      type: 'image',
+      date: '2024-12-15',
+      description: 'Another perspective of the advocacy workshop session.',
+      tags: ['advocacy', 'workshop', 'policy'],
+      src: advocacyWorkshop3,
+      originalSrc: advocacyWorkshop3,
+      featured: false
+    },
+    {
+      id: 9,
+      title: 'Advocacy Workshop - View 4',
+      category: 'programs',
+      type: 'image',
+      date: '2024-12-15',
+      description: 'Final view of the advocacy workshop session.',
+      tags: ['advocacy', 'workshop', 'policy'],
+      src: advocacyWorkshop4,
+      originalSrc: advocacyWorkshop4,
+      featured: false
+    },
+    {
+      id: 10,
       title: 'Exchange Program Launch',
       category: 'programs',
       type: 'image',
@@ -97,19 +158,19 @@ const Gallery = () => {
       featured: false
     },
     {
-      id: 7,
+      id: 11,
       title: 'GODIMEWUL Team Meeting',
       category: 'about',
       type: 'image',
       date: '2024-11-25',
       description: 'Our dedicated leadership team working tirelessly to protect workers rights and improve working conditions across Liberia.',
       tags: ['team', 'meeting', 'leadership'],
-      src: aboutImg,
-      originalSrc: aboutImg,
+      src: logo,
+      originalSrc: logo,
       featured: false
     },
     {
-      id: 8,
+      id: 12,
       title: 'GODIMEWUL Logo',
       category: 'branding',
       type: 'image',
@@ -121,7 +182,7 @@ const Gallery = () => {
       featured: true
     },
     {
-      id: 9,
+      id: 13,
       title: 'Sample Video Content',
       category: 'media',
       type: 'video',

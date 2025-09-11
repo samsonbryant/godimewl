@@ -31,14 +31,22 @@ import certificationOfLeaders from '../assets/certification_of_leaders.jpg';
 import certificationOfLeaders4 from '../assets/certification_of_leaders_4.jpg';
 import certificationOfLeaders5 from '../assets/certification_of_leaders_5.jpg';
 import certificationOfLeaders12 from '../assets/certification_of_leaders_12.jpg';
+
+// Import Programs and Events images
+import unionEducationTraining1 from '../assets/Union-education-training-1.jpg';
+import unionEducationTraining2 from '../assets/Union-Education-Training-2.jpg';
+import advocacyWorkshop1 from '../assets/advocacy-and-policy-workshop-1.jpg';
+import advocacyWorkshop2 from '../assets/advocacy-and-policy-workshop-2.jpg';
+import advocacyWorkshop3 from '../assets/advocacy-and-policy-workshop-3.jpg';
+import advocacyWorkshop4 from '../assets/advocacy-and-policy-workshop-4.jpg';
 import './Home.css';
 
 const slideData = [
   {
     image: newsImg1,
-    title: 'Leadership Training',
-    subtitle: 'Empowering Workers Through Unity',
-    description: 'Workers Leadership with the Secretary General for Gold and Diamond Mines and Energy workers Union of Liberia; Bargaining Agent for Bea Mountain Mining Corporation workers Macauley Gedeo, Jr.',
+    title: 'CBA Signing Process with Ministry of Labour',
+    subtitle: 'Secretary General Macauley Gedeo, Jr. and Ministry of Labour Cooper Kraah',
+    description: 'Exchange of CBA by the Secretary General Macauley Gedeo, Jr., GODIMEWUL with the Bea Mountain Mining Corporation Manager Emre Kuyu and Ministry of Labour Cooper Kraah.',
     buttonText: 'Meet Our Team',
     buttonLink: '/about'
   },
@@ -60,8 +68,8 @@ const slideData = [
   },
   {
     image: eventImg,
-    title: 'Union Education Training',
-    subtitle: 'Supporting Vulnerable Groups',
+    title: 'After CBA Signing Process',
+    subtitle: 'Post-CBA signing process documentation and celebration of successful agreement completion.',
     description: 'Capacity development and union education for all GODIMEWUL members.',
     buttonText: 'Get Involved',
     buttonLink: '/contact'
@@ -70,9 +78,9 @@ const slideData = [
 
 const news = [
   {
-    title: 'BMMC Local Leadership Training',
+    title: 'BMMC Workers Interaction',
     date: 'May 2025',
-    excerpt: 'Local leadership training session for BMMC workers to enhance their organizational and leadership skills.',
+    excerpt: 'Interaction between BMMC workers',
     images: [bmmcLocalLeadership],
   },
   {
@@ -100,9 +108,9 @@ const news = [
     images: [ministerLabour],
   },
   {
-    title: 'Past and Present Leadership Exchange',
+    title: 'CBA Exchange Process',
     date: 'May 2025',
-    excerpt: 'Knowledge exchange session between past and present leadership to ensure continuity and institutional memory.',
+    excerpt: 'Exchange of CBA by the Secretary General Macauley Gedeo, Jr., GODIMEWUL with the Bea Mountain Mining Corporation Manager Emre Kuyu.',
     images: [pastPresentLeadership],
   },
   {
@@ -157,20 +165,20 @@ const news = [
 
 const events = [
   {
-    date: 'July 2025',
+    date: 'April 2025',
     title: 'Union Education Training',
     desc: 'Capacity development and union education for all GODIMEWUL members.',
-    images: [eventImg, eventImg2],
+    images: [unionEducationTraining1, unionEducationTraining2],
   },
   {
-    date: 'August 2025',
+    date: 'April 2025',
     title: 'Advocacy & Policy Workshop',
     desc: 'Workshop on lobbying for policies that defend workers\' rights and interests.',
-    images: [eventImg2, eventImg3, eventImg],
+    images: [advocacyWorkshop1, advocacyWorkshop2, advocacyWorkshop3, advocacyWorkshop4],
   },
   {
-    date: 'September 2025',
-    title: 'Exchange Program Launch',
+    date: 'April 2025',
+    title: 'CBA Exchange Program Launch',
     desc: 'New exchange program for knowledge sharing with international partners.',
     images: [eventImg3],
   },

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Modal, Badge } from 'react-bootstrap';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaSearch, FaFilter, FaTimes, FaPlay, FaImage, FaVideo, FaDownload, FaShare, FaCalendar, FaTag } from 'react-icons/fa';
@@ -32,6 +32,17 @@ import certificationOfLeaders from '../assets/certification_of_leaders.jpg';
 import certificationOfLeaders4 from '../assets/certification_of_leaders_4.jpg';
 import certificationOfLeaders5 from '../assets/certification_of_leaders_5.jpg';
 import certificationOfLeaders12 from '../assets/certification_of_leaders_12.jpg';
+
+// Import Programs and Events images
+import unionEducationTraining1 from '../assets/Union-education-training-1.jpg';
+import unionEducationTraining2 from '../assets/Union-Education-Training-2.jpg';
+import advocacyWorkshop1 from '../assets/advocacy-and-policy-workshop-1.jpg';
+import advocacyWorkshop2 from '../assets/advocacy-and-policy-workshop-2.jpg';
+import advocacyWorkshop3 from '../assets/advocacy-and-policy-workshop-3.jpg';
+import advocacyWorkshop4 from '../assets/advocacy-and-policy-workshop-4.jpg';
+
+// Import leadership images
+import localLeadershipTraining from '../assets/local_leadership_training.jpg';
 
 const Media = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -161,8 +172,8 @@ const Media = () => {
       date: '2025-05-06',
       description: 'Knowledge exchange session between past and present leadership to ensure continuity and institutional memory.',
       tags: ['leadership', 'exchange', 'knowledge', 'news'],
-      src: pastPresentLeadership,
-      originalSrc: pastPresentLeadership,
+      src: bmmcLocalLeadership,
+      originalSrc: bmmcLocalLeadership,
       featured: false
     },
     {
@@ -185,8 +196,8 @@ const Media = () => {
       date: '2025-05-08',
       description: 'Meeting between newly elected leadership and management to establish working relationships and discuss future collaboration.',
       tags: ['leadership', 'management', 'meeting', 'news'],
-      src: leadershipElectMeeting,
-      originalSrc: leadershipElectMeeting,
+      src: cbaDelegation,
+      originalSrc: cbaDelegation,
       featured: false
     },
     {
@@ -209,8 +220,8 @@ const Media = () => {
       date: '2025-05-10',
       description: 'Workers Leadership with the Secretary General for Gold and Diamond Mines and Energy workers Union of Liberia; Bargaining Agent for Bea Mountain Mining Corporation workers Macauley Gedeo, Jr.',
       tags: ['leadership', 'training', 'news'],
-      src: newsImg1,
-      originalSrc: newsImg1,
+      src: localLeadershipTraining,
+      originalSrc: localLeadershipTraining,
       featured: false
     },
     {
@@ -318,24 +329,72 @@ const Media = () => {
       date: '2025-07-01',
       description: 'Capacity development and union education for all GODIMEWUL members.',
       tags: ['education', 'training', 'event'],
-      src: eventImg,
-      originalSrc: eventImg,
-      featured: false
+      src: unionEducationTraining1,
+      originalSrc: unionEducationTraining1,
+      featured: true
     },
     {
       id: 32,
+      title: 'Union Education Training (Event) - Additional View',
+      category: 'events',
+      type: 'image',
+      date: '2025-07-01',
+      description: 'Additional view of the union education training session for GODIMEWUL members.',
+      tags: ['education', 'training', 'event'],
+      src: unionEducationTraining2,
+      originalSrc: unionEducationTraining2,
+      featured: false
+    },
+    {
+      id: 33,
       title: 'Advocacy & Policy Workshop',
       category: 'events',
       type: 'image',
       date: '2025-08-01',
       description: 'Workshop on lobbying for policies that defend workers\' rights and interests.',
       tags: ['advocacy', 'workshop', 'policy', 'event'],
-      src: eventImg2,
-      originalSrc: eventImg2,
+      src: advocacyWorkshop1,
+      originalSrc: advocacyWorkshop1,
+      featured: true
+    },
+    {
+      id: 34,
+      title: 'Advocacy & Policy Workshop - View 2',
+      category: 'events',
+      type: 'image',
+      date: '2025-08-01',
+      description: 'Additional view of the advocacy and policy workshop session.',
+      tags: ['advocacy', 'workshop', 'policy', 'event'],
+      src: advocacyWorkshop2,
+      originalSrc: advocacyWorkshop2,
       featured: false
     },
     {
-      id: 33,
+      id: 35,
+      title: 'Advocacy & Policy Workshop - View 3',
+      category: 'events',
+      type: 'image',
+      date: '2025-08-01',
+      description: 'Another perspective of the advocacy and policy workshop session.',
+      tags: ['advocacy', 'workshop', 'policy', 'event'],
+      src: advocacyWorkshop3,
+      originalSrc: advocacyWorkshop3,
+      featured: false
+    },
+    {
+      id: 36,
+      title: 'Advocacy & Policy Workshop - View 4',
+      category: 'events',
+      type: 'image',
+      date: '2025-08-01',
+      description: 'Final view of the advocacy and policy workshop session.',
+      tags: ['advocacy', 'workshop', 'policy', 'event'],
+      src: advocacyWorkshop4,
+      originalSrc: advocacyWorkshop4,
+      featured: false
+    },
+    {
+      id: 37,
       title: 'Exchange Program Launch',
       category: 'events',
       type: 'image',
@@ -348,19 +407,19 @@ const Media = () => {
     },
     // Additional images from Home page assets
     {
-      id: 34,
+      id: 38,
       title: 'About GODIMEWUL',
       category: 'about',
       type: 'image',
       date: '2024-11-25',
       description: 'Our dedicated leadership team working tirelessly to protect workers rights and improve working conditions across Liberia.',
       tags: ['team', 'about', 'leadership'],
-      src: aboutImg,
-      originalSrc: aboutImg,
+      src: logo,
+      originalSrc: logo,
       featured: false
     },
     {
-      id: 35,
+      id: 39,
       title: 'GODIMEWUL Logo',
       category: 'branding',
       type: 'image',
@@ -371,33 +430,9 @@ const Media = () => {
       originalSrc: logo,
       featured: true
     },
-    {
-      id: 36,
-      title: 'Hero Background',
-      category: 'branding',
-      type: 'image',
-      date: '2024-11-19',
-      description: 'Hero background image used on the home page.',
-      tags: ['hero', 'background', 'branding'],
-      src: heroBg,
-      originalSrc: heroBg,
-      featured: false
-    },
-    {
-      id: 37,
-      title: 'Blood Donation',
-      category: 'events',
-      type: 'image',
-      date: '2025-08-02',
-      description: 'Blood donation event image.',
-      tags: ['blood', 'donation', 'event'],
-      src: slideImg3,
-      originalSrc: slideImg3,
-      featured: false
-    },
     // Sample video content (unchanged)
     {
-      id: 38,
+      id: 40,
       title: 'Sample Video Content',
       category: 'media',
       type: 'video',

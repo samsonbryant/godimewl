@@ -7,6 +7,7 @@ import About from './pages/About';
 import Departments from './pages/Departments';
 import Policies from './pages/Policies';
 import Media from './pages/Media';
+import Gallery from './pages/Gallery';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import SectorDetail from './pages/SectorDetail';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/departments/:dept?" element={<Departments />} />
         <Route path="/policies" element={<Policies />} />
         <Route path="/media" element={<Media />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/sectors" element={<Sectors />} />
