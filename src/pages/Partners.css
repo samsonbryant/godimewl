@@ -1,0 +1,263 @@
+/* Partners Page Styles */
+
+.partners-hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.partners-hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.partners-hero-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.partners-stats {
+  margin-top: 2rem;
+}
+
+.stat-item {
+  padding: 0 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+  
+  .stat-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+
+/* Partner Cards */
+.partner-card {
+  transition: all 0.3s ease;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.partner-header {
+  position: relative;
+  overflow: hidden;
+}
+
+.partner-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -50px;
+  width: 100px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: skewX(-15deg);
+}
+
+.partner-icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover .partner-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.partner-logo-wrapper {
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover .partner-logo-wrapper {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2) !important;
+}
+
+.partner-logo-wrapper img {
+  transition: transform 0.3s ease;
+}
+
+.partner-card:hover .partner-logo-wrapper img {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .partner-header {
+    padding: 1.5rem !important;
+  }
+  
+  .partner-icon-wrapper {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .partner-logo-wrapper {
+    width: 70px !important;
+    height: 70px !important;
+    padding: 8px !important;
+  }
+  
+  .partner-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .partner-header .badge {
+    font-size: 0.8rem !important;
+    padding: 0.25rem 0.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .partner-header {
+    text-align: center;
+  }
+  
+  .partner-header .row > .col-md-2,
+  .partner-header .row > .col-md-8,
+  .partner-header .row > .col-md-2:last-child {
+    margin-bottom: 1rem;
+  }
+  
+  .partner-header .row > .col-md-2:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Badge Styles */
+.partner-header .badge {
+  font-weight: 500;
+  border-radius: 15px;
+}
+
+/* List Styles */
+.list-unstyled li {
+  position: relative;
+  padding-left: 0;
+}
+
+.list-unstyled .badge.rounded-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Benefit Icons */
+.benefit-icon {
+  transition: all 0.3s ease;
+}
+
+.benefit-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Spacing */
+.partners-hero-section,
+section {
+  padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .partners-hero-section,
+  section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .partners-hero-section,
+  section {
+    padding: 2rem 0;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .display-5 {
+    font-size: 1.75rem;
+  }
+  
+  .lead {
+    font-size: 1.1rem;
+  }
+}
+
+/* Card Body Responsive */
+@media (max-width: 992px) {
+  .partner-card .card-body .row > .col-lg-8,
+  .partner-card .card-body .row > .col-lg-4 {
+    margin-bottom: 2rem;
+  }
+  
+  .partner-card .card-body .row > .col-lg-4:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Button Hover Effects */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Animation Delays */
+.partner-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.partner-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.partner-card:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+/* Print Styles */
+@media print {
+  .partners-hero-section {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .partner-header {
+    background: #f8f9fa !important;
+    color: black !important;
+  }
+  
+  .partner-card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #dee2e6 !important;
+  }
+  
+  .btn {
+    display: none !important;
+  }
+}

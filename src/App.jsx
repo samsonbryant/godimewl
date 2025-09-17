@@ -14,6 +14,7 @@ import SectorDetail from './pages/SectorDetail';
 import Sectors from './pages/Sectors';
 import Programs from './pages/Programs';
 import Members from './pages/Members';
+import Partners from './pages/Partners';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/sectors/:sectorId" element={<SectorDetail />} />
         <Route path="/programs" element={<Programs />} />
         <Route path="/members" element={<Members />} />
+        <Route path="/partners" element={<Partners />} />
       </Routes>
       <Footer />
     </BrowserRouter>

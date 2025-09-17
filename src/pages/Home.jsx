@@ -3,6 +3,7 @@ import { Container, Row, Col, Button, Card, Carousel, Badge } from 'react-bootst
 import { motion } from 'framer-motion';
 import heroBg from '../assets/header-bg.jpg';
 import aboutImg from '../assets/org1.jpg';
+import macauleyGedeoImg from '../assets/macauley_gedeo.jpg';
 import eventImg from '../assets/WhatsApp Image 2025-07-11 at 04.46.09_3914af17.jpg';
 import newsImg1 from '../assets/cb1.jpg';
 import newsImg2 from '../assets/cb2.jpg';
@@ -306,13 +307,14 @@ const Home = () => (
         <span className="scroll-arrow" />
       </motion.div>
     </section>
+    {/* Secretary General Welcome Message */}
     <section className="py-5 bg-white nlc-about-section">
       <Container>
         <Row className="align-items-center">
           <Col md={6} className="mb-4 mb-md-0">
             <motion.img
-              src={aboutImg}
-              alt="About GODIMEWUL"
+              src={macauleyGedeoImg}
+              alt="Secretary General Macauley Gedeo Jr"
               className="img-fluid rounded shadow-lg"
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -325,20 +327,116 @@ const Home = () => (
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7 }}
             >
-              <h2 className="fw-bold mb-3 text-success">Welcome to GODIMEWUL</h2>
-              <p className="fs-5 text-dark mb-3">
-                <strong>Mission:</strong> To represent workers in Liberia, within its scopes through unity, advocacy, and capacity development to achieve decent work and equality for social justice.
+              <h2 className="fw-bold mb-3" style={{ color: '#C9A13B' }}>Official Website of GODIMEWUL</h2>
+              <p className="fs-6 text-dark mb-3" style={{ lineHeight: '1.6' }}>
+                On behalf of <strong>GOLD AND DIAMOND MINES AND ENERGY WORKERS UNIONS OF LIBERIA</strong>, I am pleased to welcome you to our official website, a vital step forward in our ongoing efforts to modernize the delivery of labour-related services and to foster a more transparent and responsive institution.
               </p>
-              <p className="fs-5 text-dark mb-3">
-                <strong>Vision:</strong> Enhance the organisation's performance and improve the quality of life for workers and vulnerable groups through organizing, education, collective bargaining, social dialogue, and lobbying for policies which defend their rights and interests.
+              <p className="fs-6 text-dark mb-3" style={{ lineHeight: '1.6' }}>
+                GODIMEWUL plays a pivotal role in shaping the socio-economic landscape of the workers within Liberia. It is our mandate to promote decent work, safeguard the rights of workers, and ensure a balanced and just labour market that supports national development. As Secretary General, I remain committed to upholding the principles of equity, inclusion, and opportunity for all regardless of gender, age, background, or status.
               </p>
-              <p className="fs-6 text-dark mb-4">
-                <strong>Background:</strong> GODIMEWUL is a registered trade union organization in Liberia, accredited by the Ministry of Labour as a Bargaining Agent for workers within the Mining, Energy, Communication, Construction, and industries sectors. Established October 24, 2018. Member of the Liberia Labour Congress and partners with ILO, ITUC-Africa, and others.
+              <p className="fs-6 text-dark mb-4" style={{ lineHeight: '1.6' }}>
+                This platform has been created not only as an information hub, but also as a bridge between GODIMEWUL and the Workers we serve. Here, you will find up-to-date policies, regulations, programs, and resources aimed at empowering both our workforce that depend on it. It is also a space for engagement, dialogue, and collaboration with local and international partners in the Trade union sectors.
               </p>
-              <Button variant="outline-success" size="lg" href="/about">Learn More</Button>
+              <div className="mb-4">
+                <p className="fs-6 text-dark mb-1"><strong>Mr. Macauley Gedeo Jr</strong></p>
+                <p className="fs-6 text-muted mb-0" style={{ fontStyle: 'italic' }}>Secretary General</p>
+              </div>
+              <Button variant="outline-warning" size="lg" href="/about" style={{ borderColor: '#C9A13B', color: '#C9A13B' }}>Learn More</Button>
             </motion.div>
           </Col>
         </Row>
+      </Container>
+    </section>
+
+    {/* Mission, Vision & Background Section */}
+    <section className="mission-vision-section">
+      <Container>
+        <Row className="g-4">
+          <Col lg={4}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="h-100"
+            >
+              <Card className="mission-card h-100" style={{ borderTop: '4px solid #28a745' }}>
+                <Card.Body className="p-4 text-center">
+                  <div className="mb-3">
+                    <div className="mission-icon-wrapper" style={{ background: 'rgba(40, 167, 69, 0.1)' }}>
+                      <i className="fas fa-bullseye mission-icon" style={{ color: '#28a745' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3 text-success">Our Mission</h4>
+                  <p className="text-dark" style={{ lineHeight: '1.6' }}>
+                    To represent workers in Liberia, within its scopes through unity, advocacy, and capacity development to achieve decent work and equality for social justice.
+                  </p>
+                </Card.Body>
+              </Card>
+            </motion.div>
+          </Col>
+          
+          <Col lg={4}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="h-100"
+            >
+              <Card className="mission-card h-100" style={{ borderTop: '4px solid #C9A13B' }}>
+                <Card.Body className="p-4 text-center">
+                  <div className="mb-3">
+                    <div className="mission-icon-wrapper" style={{ background: 'rgba(201, 161, 59, 0.1)' }}>
+                      <i className="fas fa-eye mission-icon" style={{ color: '#C9A13B' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3" style={{ color: '#C9A13B' }}>Our Vision</h4>
+                  <p className="text-dark" style={{ lineHeight: '1.6' }}>
+                    Through teamwork to enhance the organisation's performance, and improve the quality of life for workers and other vulnerable groups through organising, education, collective bargaining, tripartite social dialogue, lobbying for policies which defend their rights and interests and promoting diversity.
+                  </p>
+                </Card.Body>
+              </Card>
+            </motion.div>
+          </Col>
+          
+          <Col lg={4}>
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.4 }}
+              className="h-100"
+            >
+              <Card className="mission-card h-100" style={{ borderTop: '4px solid #17a2b8' }}>
+                <Card.Body className="p-4 text-center">
+                  <div className="mb-3">
+                    <div className="mission-icon-wrapper" style={{ background: 'rgba(23, 162, 184, 0.1)' }}>
+                      <i className="fas fa-history mission-icon" style={{ color: '#17a2b8' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3 text-info">Our Background</h4>
+                  <p className="text-dark" style={{ lineHeight: '1.6' }}>
+                    GODIMEWUL is a registered trade union organization in Liberia, accredited by the Ministry of Labour as a Bargaining Agent for workers within the Mining, Energy, Communication, Construction, and industries sectors. Established October 24, 2018. Member of the Liberia Labour Congress and partners with ILO, ITUC-Africa, and others.
+                  </p>
+                </Card.Body>
+              </Card>
+            </motion.div>
+          </Col>
+        </Row>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="text-center mt-5"
+        >
+          <Button 
+            variant="" 
+            size="lg" 
+            className="gradient-button px-5 py-3 shadow-lg" 
+            href="/about"
+          >
+            Learn More About Us
+          </Button>
+        </motion.div>
       </Container>
     </section>
     {/* Latest News & Announcements */}

@@ -1,12 +1,11 @@
 import React from 'react';
 import { createRoot } from "react-dom/client";
 import App from './App.jsx';
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { MongoDBProvider } from './useContext.jsx';
 
 createRoot(document.getElementById("root")).render(
-  <MongoDBProvider>
+  <React.StrictMode>
     <App />
-  </MongoDBProvider>
+  </React.StrictMode>
 );

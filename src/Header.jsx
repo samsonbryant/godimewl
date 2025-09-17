@@ -23,6 +23,7 @@ const navLinks = [
   },
   { label: 'Programs', to: '/programs' },
   { label: 'Members', to: '/members' },
+  { label: 'Our Partners', to: '/partners' },
   { label: 'Media & Gallery', to: '/media' },
   { label: 'Contact', to: '/contact' },
 ];

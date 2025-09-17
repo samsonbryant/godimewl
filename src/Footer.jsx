@@ -51,6 +51,7 @@ const Footer = () => {
     { name: 'Our Sectors', url: '/sectors' },
     { name: 'Programs', url: '/programs' },
     { name: 'Members', url: '/members' },
+    { name: 'Our Partners', url: '/partners' },
     { name: 'Contact Us', url: '/contact' },
     { name: 'News & Media', url: '/media' }
   ];

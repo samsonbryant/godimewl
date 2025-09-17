@@ -509,6 +509,238 @@
   }
 }
 
+/* Secretary General Welcome Section */
+.welcome-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .welcome-section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-section {
+    padding: 2rem 0;
+  }
+}
+
+.welcome-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.secretary-general-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 6px solid rgba(255,255,255,0.3);
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .secretary-general-photo {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .secretary-general-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.secretary-general-photo:hover {
+  transform: scale(1.05);
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 50%;
+  padding: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 576px) {
+  .online-indicator {
+    padding: 6px;
+  }
+}
+
+.online-status {
+  width: 20px;
+  height: 20px;
+  background: #28a745;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@media (max-width: 576px) {
+  .online-status {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
+
+/* Mission, Vision, Background Cards */
+.mission-vision-section {
+  padding: 4rem 0;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .mission-vision-section {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .mission-vision-section {
+    padding: 2rem 0;
+  }
+}
+
+.mission-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  background: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.mission-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .mission-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mission-icon-wrapper {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.mission-card:hover .mission-icon-wrapper {
+  transform: rotateY(360deg);
+}
+
+.mission-icon {
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .mission-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .mission-icon {
+    font-size: 18px;
+  }
+}
+
+.gradient-button {
+  background: linear-gradient(135deg, #C9A13B 0%, #B8952F 100%);
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.gradient-button:hover {
+  background: linear-gradient(135deg, #B8952F 0%, #A8852A 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(201, 161, 59, 0.3);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .gradient-button {
+    padding: 0.625rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .gradient-button {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Decorative Elements */
+.section-divider {
+  width: 80px;
+  height: 4px;
+  background: #C9A13B;
+  border-radius: 2px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: #C9A13B;
+  border-radius: 50%;
+}
+
 /* Print styles */
 @media print {
   .hero-carousel-section,
@@ -518,9 +750,18 @@
   
   .news-card,
   .event-card,
-  .sector-card {
+  .sector-card,
+  .mission-card {
     break-inside: avoid;
     box-shadow: none !important;
     border: 1px solid #000 !important;
+  }
+  
+  .welcome-section {
+    background: white !important;
+  }
+  
+  .secretary-general-photo {
+    border: 2px solid #000 !important;
   }
 } 
