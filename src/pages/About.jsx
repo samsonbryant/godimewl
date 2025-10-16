@@ -77,7 +77,7 @@ const leadershipData = [
     name: 'Samuel S. Sambola',
     position: 'Deputy Secretary General',
     image: samuelSambolaImg, // Found matching image
-    bio: 'Samuel S. Sambola serves as the Deputy Secretary General of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
+    bio: 'Samuel S. Sambola serves as the Deputy Secretary General of GODIMEWUL, leading the organization with experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'samuel.sambola@godimewul.org',
     phone: '+231 886210334/07773533445',
     social: {
@@ -94,7 +94,7 @@ const leadershipData = [
     name: 'Adolphus D. Dopoh',
     position: 'Education Director',
     image: adolphusImg, // Found matching image
-    bio: 'Adolphus D. Dopoh serves as the Education Director of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
+    bio: 'Adolphus D. Dopoh serves as the Education Director of GODIMEWUL, leading the organization with experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'adolphus.dopoh@godimewul.org',
     phone: '+231 886430158/0776430158',
     social: {
@@ -128,7 +128,7 @@ const leadershipData = [
     name: 'Wesley N. Saylee',
     position: 'Grievance-Chair',
     image: wesleySayleeImg, // Found matching image
-    bio: 'Wesley N. Saylee serves as the Grievance-Chair of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
+    bio: 'Wesley N. Saylee serves as the Grievance-Chair of GODIMEWUL, leading the organization with experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'wesley.saylee@godimewul.org',
     phone: '+231 886968388/0777968388',
     social: {
