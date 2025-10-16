@@ -43,7 +43,7 @@ const leadershipData = [
     name: 'Winston W. Wreh, Sr.',
     position: 'President General',
     image: winstonWrehImg, // Found matching image
-    bio: 'Winston W. Wreh, Sr. serves as the President General of GODIMEWUL, leading the organization with over 15 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
+    bio: 'Winston W. Wreh, Sr. serves as the President General of GODIMEWUL, leading the organization with over 10 years of experience in labor rights advocacy and union leadership. He has been instrumental in negotiating collective bargaining agreements and advancing workers\' rights across Liberia\'s mining and energy sectors.',
     email: 'winston.wreh@godimewul.org',
     phone: '+231 886880068/776147982',
     social: {

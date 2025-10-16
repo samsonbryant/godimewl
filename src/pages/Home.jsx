@@ -33,6 +33,12 @@ import certificationOfLeaders4 from '../assets/certification_of_leaders_4.jpg';
 import certificationOfLeaders5 from '../assets/certification_of_leaders_5.jpg';
 import certificationOfLeaders12 from '../assets/certification_of_leaders_12.jpg';
 
+// Import LTC mobile second CBA images
+import ltcMobileSecondCba1 from '../assets/ltc_mobile_second_cba_1.jpg';
+import ltcMobileSecondCba2 from '../assets/ltc_mobile_second_cba_2.jpg';
+import ltcMobileSecondCba4 from '../assets/ltc_mobile_second_cba_4.jpg';
+import ltcMobileSecondCba from '../assets/ltc_mobile_second_cba.jpg';
+
 // Import Programs and Events images
 import unionEducationTraining1 from '../assets/Union-education-training-1.jpg';
 import unionEducationTraining2 from '../assets/Union-Education-Training-2.jpg';
@@ -78,6 +84,18 @@ const slideData = [
 ];
 
 const news = [
+  {
+    title: 'LTC mobile second CBA',
+    date: 'July 2025',
+    excerpt: 'LTC mobile second Collective Bargaining Agreement signing ceremony and process documentation.',
+    images: [ltcMobileSecondCba, ltcMobileSecondCba1, ltcMobileSecondCba2, ltcMobileSecondCba4],
+  },
+  {
+    title: 'Opening ceremony',
+    date: 'July 2025',
+    excerpt: 'Official opening ceremony event with key stakeholders and union leadership.',
+    images: [ltcMobileSecondCba1, ltcMobileSecondCba2], // Using LTC images as placeholder for opening ceremony
+  },
   {
     title: 'BMMC Workers Interaction',
     date: 'May 2025',
@@ -165,6 +183,18 @@ const news = [
 ];
 
 const events = [
+  {
+    date: 'July 2025',
+    title: 'LTC mobile second CBA',
+    desc: 'LTC mobile second Collective Bargaining Agreement signing ceremony and process documentation.',
+    images: [ltcMobileSecondCba, ltcMobileSecondCba1, ltcMobileSecondCba2, ltcMobileSecondCba4],
+  },
+  {
+    date: 'July 2025',
+    title: 'Opening ceremony',
+    desc: 'Official opening ceremony event with key stakeholders and union leadership.',
+    images: [ltcMobileSecondCba1, ltcMobileSecondCba2],
+  },
   {
     date: 'April 2025',
     title: 'Union Education Training',
